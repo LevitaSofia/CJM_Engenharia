@@ -99,11 +99,3 @@
   .hero-scene-title { font-size: clamp(1.75rem, 2.3vw, 2.6rem); max-width: 520px; }
   .hero-scene-nav { inset: auto 36px 40px 56px; }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .home-cinematic-hero .hero-enter,
-  .hero-experience:not([data-motion="enabled"]) *,
-  .hero-experience:not([data-motion="enabled"]) *::before { animation: none !important; transition: none !important; }
-  .hero-experience:not([data-motion="enabled"]) .hero-blueprint,
-  .hero-experience:not([data-motion="enabled"]) .hero-reveal-edge { display: none; }
-}
