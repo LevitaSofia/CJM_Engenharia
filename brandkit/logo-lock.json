@@ -1,0 +1,9 @@
+{
+  "source_summary": "Logo oficial CJM ja existente em public/brand/: cjm-logo.png (completo, fundo claro), cjm-mark.png (somente simbolo, fundo claro), cjm-logo-dark.png (completo, para fundo escuro), cjm-mark-dark.png (simbolo, para fundo escuro). PNG RGBA, 1536px de largura. Fornecido pelo usuario; preservado sem redesenho.",
+  "logo": {
+    "name": "CJM - Engenharia e Limpeza de Coifas",
+    "asset": {
+      "path": "public/brand/cjm-logo.png"
+    }
+  }
+}

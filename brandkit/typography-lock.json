@@ -1,0 +1,8 @@
+{
+  "source_summary": "Tipografia ja implementada em src/app/layout.tsx via next/font/google: Geist (sans) para titulos e corpo de texto, Geist Mono para elementos tecnicos. Adotada como referencia de estilo tipografico ao compor imagens com texto/UI (ex.: GPT Image 2), mesmo sabendo que fontes exatas nao sao renderizadas por modelos de imagem fotorrealista.",
+  "typography": {
+    "display": {"family": "Geist", "source": "google:Geist", "style": "normal", "weight": 700},
+    "body": {"family": "Geist", "source": "google:Geist", "style": "normal", "weight": 400},
+    "font_links": ["https://fonts.google.com/specimen/Geist", "https://fonts.google.com/specimen/Geist+Mono"]
+  }
+}

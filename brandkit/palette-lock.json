@@ -1,0 +1,16 @@
+{
+  "source_summary": "Paleta ja definida e implementada em src/app/globals.css (tokens --color-navy, --color-green, --color-steel etc.), usada em todo o site atual. Adotada como paleta oficial para as geracoes Higgsfield, para garantir consistencia visual entre o codigo e as imagens/videos gerados.",
+  "palette": {
+    "colors": [
+      {"hex": "#0b1f33", "name": "Navy", "role": "primary"},
+      {"hex": "#071523", "name": "Navy Dark", "role": "primary-dark"},
+      {"hex": "#16794d", "name": "Green", "role": "accent"},
+      {"hex": "#0f5c3a", "name": "Green Dark", "role": "accent-dark"},
+      {"hex": "#64748b", "name": "Steel", "role": "neutral"},
+      {"hex": "#e2e8f0", "name": "Steel Light", "role": "neutral-light"},
+      {"hex": "#101820", "name": "Foreground", "role": "text"},
+      {"hex": "#ffffff", "name": "Background", "role": "background"}
+    ],
+    "gradients": []
+  }
+}
