@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "brand_context": {
+    "name": "CJM – Engenharia e Limpeza de Coifas",
+    "offering": "Limpeza tecnica de coifas, dutos e filtros; manutencao de exaustores e exaustores centrifugos; damper corta-fogo; lavadores de gases; sistemas de ventilacao; manutencao preventiva; inspecoes e relatorios tecnicos.",
+    "industry": "Engenharia aplicada a sistemas de exaustao industrial / limpeza tecnica comercial",
+    "positioning": "Engenharia + Limpeza Tecnica + Manutencao + Seguranca. Nunca aparencia de empresa de limpeza residencial ou improvisada.",
+    "audience": "Restaurantes, cozinhas industriais, hoteis, supermercados, hospitais, industrias, gestores de manutencao, responsaveis tecnicos, engenheiros.",
+    "tone": ["tecnico", "profissional", "confiavel", "sem exageros publicitarios"]
+  },
+  "concept": {
+    "name": "CJM Industrial Premium",
+    "visual_premise": "Engenharia industrial premium aplicada a exaustao comercial: aco inox, fluxo de ar, manutencao tecnica, seguranca, sob luz azul-marinho com acentos verdes.",
+    "research_principles": [
+      "Realismo fotografico, nunca ilustrativo ou 3D estilizado",
+      "Ambientes reais de cozinha profissional / industria",
+      "Consistencia cromatica com os tokens ja usados no site (globals.css)"
+    ],
+    "reference_preferences": [
+      "Logo oficial CJM (public/brand/)",
+      "Fotos reais de referencia em public/fotos/ (mesmo sendo stock temporario)"
+    ],
+    "avoid": [
+      "estetica de limpeza residencial (baldes, vassouras, luvas domesticas, espuma exagerada)",
+      "icones infantis ou genericos de faxina",
+      "excesso de verde ecologico",
+      "cyberpunk, neon exagerado, efeitos futuristas",
+      "texto ou logotipos falsos dentro da imagem",
+      "poses artificiais de banco de imagens barato"
+    ]
+  },
+  "visual_axes": {
+    "restrained_expressive": 25,
+    "geometric_organic": 30,
+    "familiar_experimental": 20
+  },
+  "authoritative_assets": {
+    "logo": {
+      "origin": "user_supplied",
+      "status": "fixed",
+      "evidence": "source-declared",
+      "files": {
+        "full_color_light_bg": "public/brand/cjm-logo.png",
+        "mark_light_bg": "public/brand/cjm-mark.png",
+        "full_color_dark_bg": "public/brand/cjm-logo-dark.png",
+        "mark_dark_bg": "public/brand/cjm-mark-dark.png"
+      },
+      "notes": "PNG RGBA, 1536px de largura. Nunca redesenhar, recolorir ou distorcer. Usar mark_* quando o espaco for pequeno ou circular."
+    },
+    "fonts": [],
+    "references": [
+      "public/fotos/limpeza-coifa-equipe.jpg",
+      "public/fotos/limpeza-coifa-manual.jpg",
+      "public/fotos/manutencao-exaustor-motor.jpg",
+      "public/fotos/manutencao-exaustor-grelha.jpg",
+      "public/fotos/limpeza-dutos-equipe.jpg",
+      "public/fotos/coifa-industrial-instalada.jpg"
+    ]
+  },
+  "palette": {
+    "origin": "user_supplied",
+    "status": "fixed",
+    "evidence": "source-declared",
+    "source": "src/app/globals.css (tokens ja implementados no site)",
+    "primary": [
+      {"hex": "#0b1f33", "name": "Navy", "role": "primary"},
+      {"hex": "#071523", "name": "Navy Dark", "role": "primary-dark"}
+    ],
+    "accent": [
+      {"hex": "#16794d", "name": "Green", "role": "accent"},
+      {"hex": "#0f5c3a", "name": "Green Dark", "role": "accent-dark"}
+    ],
+    "neutral": [
+      {"hex": "#64748b", "name": "Steel", "role": "neutral"},
+      {"hex": "#e2e8f0", "name": "Steel Light", "role": "neutral-light"},
+      {"hex": "#101820", "name": "Foreground", "role": "text"},
+      {"hex": "#ffffff", "name": "Background", "role": "background"}
+    ],
+    "support_visual_only": [
+      {"hex": "#3a3f44", "name": "Grafite", "role": "support (nao codificado no CSS, apenas para geracao visual de texturas/metal)"},
+      {"hex": "#9aa5b1", "name": "Cinza Metalico", "role": "support (aco inox escovado)"}
+    ],
+    "forbidden": ["verde saturado tipo \"eco\"", "azul neon/ciano futurista", "gradientes vibrantes multicoloridos"]
+  },
+  "typography": {
+    "origin": "user_supplied",
+    "status": "fixed",
+    "evidence": "source-declared",
+    "source": "src/app/layout.tsx (next/font/google)",
+    "display": {"family": "Geist", "source": "google:Geist", "style": "normal", "weight": 700},
+    "body": {"family": "Geist", "source": "google:Geist", "style": "normal", "weight": 400},
+    "mono": {"family": "Geist Mono", "source": "google:Geist Mono", "use": "dados tecnicos, specs, relatorios"},
+    "note": "Modelos de imagem fotorrealista nao renderizam esta fonte com precisao. Nunca pedir texto legivel dentro da imagem gerada; texto real fica em HTML/CSS por cima da imagem."
+  },
+  "layout": {
+    "grid": "reutiliza o grid/spacing ja existente nos componentes Next.js do site",
+    "margins": "n/a para geracao de imagem; ver 'composition' abaixo",
+    "spacing_scale": [],
+    "alignment": "n/a",
+    "density": "limpa, sem poluicao visual"
+  },
+  "shape_language": {
+    "corner_radii": ["evitar bordas arredondadas em excesso nas imagens geradas (alinhado ao logo, que usa formas retas/angulares)"],
+    "borders": [],
+    "shadows": ["iluminacao industrial discreta, sombras naturais, sem sombras dramaticas de estudio"],
+    "forms": ["linhas retas", "geometria tecnica", "engrenagem/coifa/duto como motivos recorrentes do logo, nao repetir literalmente nas fotos"]
+  },
+  "graphic_devices": {
+    "motifs": ["aco inox escovado", "fluxo de ar", "linhas tecnicas", "iluminacao industrial"],
+    "patterns": [],
+    "textures": ["metal escovado", "vidro", "superficies industriais limpas"],
+    "rules": ["manter mesma familia de cores e tratamento de luz em toda geracao futura"]
+  },
+  "composition": {
+    "hierarchy": "cena > espaco negativo para titulo > CTA",
+    "logo_placement": ["nao inserir o logo dentro das imagens geradas; o logo e aplicado depois, via codigo (Header/Footer)"],
+    "image_behavior": "espaco negativo reservado para overlay de texto; areas mais escuras/neutras nas zonas de titulo; nada de elementos importantes nas bordas; preparar recortes distintos para desktop (16:9) e mobile (9:16 ou 4:5)",
+    "text_behavior": "nunca inserir texto, numeros, logotipos falsos ou UI dentro da imagem gerada"
+  },
+  "applications": {
+    "hero": {
+      "cena": "cozinha profissional com coifa industrial em inox e sistema de exaustao, iluminacao azul-marinho dominante com pequenos acentos verdes, metal escovado, sensacao de eficiencia/limpeza/tecnologia/seguranca",
+      "formatos": ["desktop 16:9", "mobile 9:16 ou 4:5"],
+      "must_preserve": ["paleta fixa", "espaco negativo para titulo", "sem texto embutido"]
+    },
+    "servicos": {
+      "coifas": "inox, limpeza tecnica em andamento, remocao de gordura, acabamento profissional",
+      "dutos": "interior de dutos, ventilacao, fluxo de ar, limpeza especializada",
+      "exaustores": "motores, turbinas, equipamentos industriais, manutencao",
+      "damper": "mecanismo metalico, seguranca, inspecao tecnica",
+      "lavador_gases": "sistema industrial, agua, exaustao, tratamento de gases",
+      "ventilacao": "fluxo de ar, dutos, engenharia, ambientes profissionais"
+    },
+    "pessoas": {
+      "quando_aparecerem": "tecnicos profissionais, EPIs compativeis (capacete, luvas, uniforme), comportamento natural, sem poses artificiais, sem destaque desnecessario de rosto, sem logotipos de terceiros visiveis nas roupas"
+    }
+  },
+  "unknowns": [
+    "Nao ha ainda fotografia 100% propria da CJM em alta qualidade para todos os servicos — as fotos atuais em public/fotos/ sao stock temporario (uma inclusive traz logotipo de outra marca na roupa do tecnico, ex.: manutencao-exaustor-motor.jpg) e devem ser substituidas por fotos reais ou geracoes proprias assim que possivel.",
+    "Fontes exatas (Geist) nao sao um requisito visual forte para modelos de imagem — usadas aqui apenas como referencia de caracter tipografico (grotesk, geometrico, moderno), nao para renderizacao literal."
+  ]
+}
