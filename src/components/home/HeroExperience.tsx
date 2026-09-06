@@ -32,7 +32,6 @@ function ExtractionDrawing() {
 export function HeroExperience({ children }: { children: ReactNode }) {
   const [sceneIndex, setSceneIndex] = useState(0);
   const [replay, setReplay] = useState(0);
-  const [userMotion, setUserMotion] = useState(false);
   const [readyImage, setReadyImage] = useState<string | null>(null);
   const scene = scenes[sceneIndex];
 
@@ -43,7 +42,7 @@ export function HeroExperience({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="hero-experience" data-motion={userMotion ? "enabled" : "system"} aria-label="Explore os serviços de exaustão">
+    <div className="hero-experience" aria-label="Explore os serviços de exaustão">
       <div key={`${sceneIndex}-${replay}`} className="hero-scene" data-ready={!scene.image || readyImage === scene.image}>
         <div className="hero-scene-photo">
           {children}
@@ -65,7 +64,7 @@ export function HeroExperience({ children }: { children: ReactNode }) {
 
       <div className="hero-media-topline">
         <span>Sistemas de exaustão <span aria-hidden="true">/</span> CJM</span>
-        <button type="button" className="hero-replay" onClick={() => { setUserMotion(true); setReplay((value) => value + 1); }} aria-label="Repetir entrada animada">
+        <button type="button" className="hero-replay" onClick={() => setReplay((value) => value + 1)} aria-label="Repetir entrada animada">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6" /></svg>
           <span>Ver animação</span>
         </button>
