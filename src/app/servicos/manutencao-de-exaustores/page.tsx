@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { ServicePage } from "@/components/ServicePage";
+import { getService } from "@/lib/site";
+
+const service = getService("manutencao-de-exaustores");
+
+export const metadata: Metadata = service
+  ? {
+      title: service.name,
+      description: service.shortDescription,
+    }
+  : {};
+
+export default function Page() {
+  if (!service) notFound();
+  return <ServicePage service={service} />;
+}
